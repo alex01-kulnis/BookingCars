@@ -3,7 +3,7 @@ const router = new Router();
 const bookingController = require('../controllers/BookingController');
 
 
-router.post('/:id', bookingController.getBookingCar);
+router.post('/orders', bookingController.getBookingCar);
 // router.get('/:id', carController);
 
 module.exports = router;

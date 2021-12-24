@@ -7,6 +7,11 @@ class CarController {
     res.json(car);
   }
 
+	async getCarsReply(req, res) {
+    const {start, end} = req.body;
+    const workload = await carService.getCarsReply(start, end);
+    res.json(workload);
+  }
 }
 
 module.exports = new CarController();

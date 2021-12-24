@@ -3,6 +3,6 @@ const router = new Router();
 const carController = require('../controllers/CarController');
 
 router.get('/cars', carController.getFreeCars);
-// router.get('/:id', carController);
+router.get('/cars/reply', carController.getCarsReply);
 
 module.exports = router;
