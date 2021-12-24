@@ -1,4 +1,4 @@
-const carService = require('../services/carService');
+const carService = require('../services/CarService');
 
 class CarController {
   async getFreeCars(req, res) {
@@ -6,6 +6,7 @@ class CarController {
     const car = await carService.getFreeCars(start_date, end_date);
     res.json(car);
   }
+
 }
 
 module.exports = new CarController();
