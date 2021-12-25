@@ -5,8 +5,5 @@ const bookingRouter = require('./BookingRouter');
 
 router.use('/car', carRouter);
 router.use('/booking', bookingRouter);
-// router.use('/type', typeRouter)
-// router.use('/brand', brandRouter)
-// router.use('/device', deviceRouter)
 
 module.exports = router;
